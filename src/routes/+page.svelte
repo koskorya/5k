@@ -1,6 +1,7 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import '../app.css';
+	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
+	import '../app.css';
 
     let timerElement: HTMLElement;
     onMount(() => {
@@ -93,8 +94,8 @@
 
         <div class="poll-section">
             <h2 class="section-title">WHO WILL WIN?</h2>
-            <img src="/david&I.jpeg" alt="David and I" class="poll-image" />
-            <iframe src="https://strawpoll.com/embed/GeZARPe6kyV" style="width: 100%; max-width: 500px; height: 410px; border: 0;"></iframe>
+            <img src="{base}/david&I.jpeg" alt="David and I" class="poll-image" />
+            <iframe src="https://strawpoll.com/embed/GeZARPe6kyV" title="Who will win?" style="width: 100%; max-width: 500px; height: 410px; border: 0;"></iframe>
         </div>
     </div>
 </div>
